@@ -43,9 +43,7 @@ public class StudentService implements StudentRepo {
 			s1.setSname("Sasi");
 		}
 		System.out.println(s1.getSid()+"  "+s1.getSname()+"  "+s1.getSclass());
-	}
-		
-		
+	}	
 	}
 
 	@Override
@@ -64,7 +62,11 @@ public class StudentService implements StudentRepo {
 	public void addStudent(int id, String name, String sclass) {
 		// TODO Auto-generated method stub
 		Student s =new Student(id,name,sclass);
-		list.add(s);	
+		list.add(s);
+		
+		for(Student s1:list) {
+			System.out.println(s1.getSid()+"  "+s1.getSname()+"  "+s1.getSclass());
+		}
 	}
 
 

@@ -30,8 +30,8 @@ public class StudentClient {
 				break;
 			case 3:
 				int sid= sc.nextInt();
-				String sname= sc.nextLine();
-				String sclass = sc.nextLine();
+				String sname= sc.next();
+				String sclass = sc.next();
 				
 				s.addStudent(sid, sname, sclass);
 				break;
